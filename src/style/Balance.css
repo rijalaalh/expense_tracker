@@ -1,0 +1,57 @@
+/** @format */
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight:700;
+  font-style: normal;
+}
+.income_expense{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    .income{
+        h2{
+            color: rgb(16, 183, 16);
+        }
+    }
+       .expense{
+        h2{
+            color: rgb(234, 23, 23);
+        }
+    }
+}
+.history .histroy_box{
+    margin: 10px 0px;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    position: relative;
+}
+.history .histroy_box::after{
+    content: attr(color_rang);
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-color: red;
+    right: 0;
+    top: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
